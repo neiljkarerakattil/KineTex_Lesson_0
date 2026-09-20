@@ -1,0 +1,292 @@
+% Hi, welcome to the Kinetex_Lesson example video input. this file contains most of the commands that can be used in this version of Kinetex_Lesson
+% A list of commands and a proper documentation is coming soon. For now, Please use this document as a reference for the possible commands.
+
+% Some things to note:
+% -> high quality time to write = approx 25 minutes
+% -> first startup might take longer than usual
+% -> when running, the app might say that it needs SoX to run. It doesn't. An effort is being made to removing this dependency or adding it so it stops asking
+% -> 
+
+\title!{Comprehensive Manimation Feature Test}
+
+\voiceover{Welcome to the comprehensive Manimation feature test. This document demonstrates sections, equations, explanations, figures, tables, voiceovers, pauses, and long paragraphs.}
+
+This document is intended to exercise the majority of the Manimation parser and renderer.
+
+\section!{Introduction}
+
+\voiceover{This is the opening paragraph of the document. It contains inline mathematics such as}
+
+\text{This is the opening paragraph of the document. It contains inline mathematics such as \(E = mc^2\), \(\alpha\), \(\beta\), and \(\Delta U\). The renderer should correctly display ordinary text while preserving the inline mathematics.}
+
+\pause{1}
+
+\subsection!{Objectives}
+
+\text!{The goals of this demonstration are:}
+
+\begin!{itemize}
+\item Verify voiced list items.
+\item Display equations.
+\item Display tables.
+\item[@] Display figures.
+\item[*] Test pauses and voiceovers.
+\end{itemize}
+
+\begin!{explanation}
+The document begins with simple text before moving into mathematical derivations.
+\end{explanation}
+
+\begin!{explanation}
+Reminder that explanation blocks, titles, sections, subsections that have an "!" in the command will be voiced. 
+\end{explanation}
+
+\begin{explanation}
+environments without the exclamation marks (like this one) will not be voiced
+\end{explanation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Simple Algebra}
+
+
+\begin!{equation}
+2x+3=11
+\text!{Equations can be voiced or unvoiced according to how you choose}
+\end{equation}
+
+\begin!{explanation}
+We begin with a simple linear equation.
+\end{explanation}
+
+\pause{1}
+
+\begin{equation}
+2x+3-3=11-3
+\text!{steps like this are automatically turned into an explanation}
+\end{equation}
+
+\begin{explanation}
+The same quantity must be subtracted from both sides.
+\end{explanation}
+
+\pause{1}
+
+\begin{equation}
+2x=8
+\end{equation}
+
+\begin!{explanation}
+The equation has been simplified.
+\end{explanation}
+
+\begin{equation}
+x=\frac{8}{2}
+\end{equation}
+
+\begin{equation}
+x=4
+\end{equation}
+
+\voiceover{The solution is x equals four. Notice that only this narration is spoken while the mathematical notation remains on screen.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Pendulum Example}
+
+The period of a simple pendulum is
+
+\begin!{equation}
+T=2\pi\sqrt{\frac{L}{g}}
+\end{equation}
+
+\begin!{explanation}
+This equation relates the oscillation period to the pendulum length.
+\end{explanation}
+
+Square both sides.
+
+\begin!{equation}
+T^2=4\pi^2\frac{L}{g}
+\end{equation}
+
+Multiply by \(g\).
+
+\begin!{equation}
+gT^2=4\pi^2L
+\end{equation}
+
+Solve for gravity.
+
+\begin!{equation}
+g=\frac{4\pi^2L}{T^2}
+\text!{be careful when automatically voicing equations as sometimes they will not sound correct.}
+\end{equation}
+
+\pause{2}
+
+\begin!{equation}
+\text!{Equation environments are handled in steps. Explanations and equations inside this environment are played one line at a time}
+T=2\pi\sqrt{\frac{L}{g}}
+T^2=4\pi^2\frac{L}{g}
+gT^2=4\pi^2L
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Gaussian Distribution}
+
+\begin{equation}
+n(\mu,\sigma^2)=\frac{A}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-(x-\mu)^2}{2\sigma^2}\right)
+\end{equation}
+
+\voiceover{This equation represents a Gaussian distribution. You might notice that the equation has been scaled and shifted automatically to give room for the paragraph. This will also happen for tables and figures when a paragraph or itemize environment appears}
+
+This equation represents a Gaussian distribution. The peak occurs at the mean, while the standard deviation determines the width of the curve.
+
+\text!{The previous paragraph had the voice and render seperated. If you want to voice a paragraph using the same text with which it is rendered, like this one, you can always use the \\text command.}
+
+\text!{However, it is best practice to write a cleaned up voiceover and use "\\voiceover" so that the text to speech will read it correctly.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Table Demonstration}
+
+The following table should be centered and scaled appropriately.
+
+\begin{tabular}{|l|c|r|}
+\hline
+Symbol & Value & Units\\
+\hline
+$\alpha$ & 10 & m\\
+$\beta$ & 25 & s\\
+$\gamma$ & 31.5 & kg\\
+$\Delta U$ & $(1.50\pm0.63)\e{-1}$ & J\\
+\hline
+
+\caption!{A small demonstration table.}
+
+\end{tabular}
+
+\begin!{explanation}
+This explanation belongs to the table.
+\end{explanation}
+
+\pause{1}
+
+\clear{}
+
+\begin{tabular}{|c||c|c|c|}
+
+\hline
+Quantity & Trial 1 & Trial 2 & Trial 3\\
+\hline
+\hline
+
+Pressure (Pa) &
+$(9.72\pm0.40)\e4$ &
+$(1.25\pm0.40)\e5$ &
+$(1.71\pm0.40)\e5$\\
+
+\hline
+
+Volume (m$^3$) &
+$(2.00\pm0.05)\e{-5}$ &
+$(1.50\pm0.05)\e{-5}$ &
+$(1.00\pm0.05)\e{-5}$\\
+
+\hline
+
+Temperature (K) &
+293 &
+301 &
+312\\
+
+\hline
+
+\caption{Large table stress test.}
+
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Figure Demonstration}
+
+\begin{figure}
+optimal location hint elipse high fidelity restricted.png
+\end{figure}
+
+\begin!{explanation}
+A simple figure has been inserted.
+\end{explanation}
+
+\pause{1}
+
+\begin{figure}
+angle and phase quadsum centersum diagram.png
+\end{figure}
+
+\begin{explanation}
+The second figure appears immediately after the first.
+\end{explanation}
+
+figures, tables, and equations will be moved and scaled when a paragraph is added to the video.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Long Paragraph}
+
+\voiceover{Paragraphs are automatically scaled to fit the right half of the screen. Any equations that appear alongside a paragraph will automatically be adjusted to the right side of the screen as well. Also note that Paragraphs, and any other rendered element, will always linger until the associated voiceover is completed}
+
+This experiment investigated the thermodynamic behavior of a gas undergoing adiabatic and isothermal compression and expansion. Pressure and volume measurements were collected throughout each process and compared with theoretical predictions. The experimentally measured values generally followed the expected trends, although small deviations were observed because the apparatus was not perfectly insulated and heat transfer with the surroundings could not be completely eliminated. These observations demonstrate the importance of experimental uncertainty, calibration, and environmental conditions when comparing laboratory measurements with ideal thermodynamic models.
+
+\pause{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Mixed Content}
+
+Here is a paragraph immediately followed by an equation.
+
+\begin{equation}
+F=ma
+\text!{Newton's Second Law}
+\end{equation}
+
+Another paragraph follows immediately after the equation. This is intended to verify spacing and layout transitions between different object types.
+
+\begin!{explanation}
+The renderer should smoothly animate between paragraphs and equations.
+\end{explanation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section!{Final Summary}
+
+The renderer has now demonstrated
+
+\begin{itemize}
+\item Titles
+\item Sections
+\item Subsections
+\item Ordinary text
+\item Inline mathematics
+\item Display equations
+\item Text inside equation blocks
+\item Voiced % Unvoiced environments
+\item Tables
+\item Figures
+\item Voiceovers
+\item Pauses
+\item Long paragraphs
+\item Multiple consecutive objects
+\end{itemize}
+
+\begin!{explanation}
+If this document renders correctly, the parser is likely robust enough for most laboratory reports, 
+\end{explanation}
+
+\voiceover{Thank you, this is the end of the Latex-Manim Video generator demonstration}
+
+\title{End of Demonstration}
