@@ -10,10 +10,10 @@ The main features currently implemented are that latex style math is rendered an
 ## Dependancies
 At a minimum, these are the dependencies that can be installed manually. However, the installation steps will attempt to install all these dependencies in a more automated way. This only needs to be used if the installer fails.
 
-*manim
-*manim_voiceover
-*kokoro_mv
-*accesible_math_reader
-*numpy
-*pyside6
+* manim
+* manim_voiceover
+* kokoro_mv
+* accesible_math_reader
+* numpy
+* pyside6
 
