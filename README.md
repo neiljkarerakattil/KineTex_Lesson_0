@@ -17,3 +17,6 @@ At a minimum, these are the dependencies that can be installed manually. However
 * numpy
 * pyside6
 
+## Important
+
+* When the app runs, it might give a warning that SoX is missing. SoX is not required, but it can be installed to remove the Warning. If installed, SoX must be added to PATH manually.
