@@ -1,3 +1,4 @@
+#combined main file
 #LatexParser Imports
 import re
 from dataclasses import dataclass 
