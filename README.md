@@ -32,28 +32,28 @@ At a minimum, these are the dependencies that can be installed manually. However
 
 3) Create a virtual environment for this project (recommended):
 * Open your terminal (macOS/Linux) or Command Prompt/PowerShell (Windows) and use cd to go to the directory where you want to store your project:
-'''
+```
 cd path/to/your/project
-'''
+```
 * Run the creation command. You can name your environment folder whatever you like, but .venv or venv are standard conventions:
-'''
+```
 python3 -m venv .venv
-'''
+```
 (use "python" instead of "python3" if using windows)
 
 * Before you can use the environment, you must activate it. The command varies depending on your operating system and shell:
-'''
+```
 source .venv/bin/activate
-'''
+```
 
 4) Install Dependencies
 * Run this line of code in the terminal with the virtual environment.
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
-5) Run main.py 
-'''
+5) Run main.py
+```
 python3 main.py
-'''
+```
 
