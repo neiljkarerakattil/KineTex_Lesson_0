@@ -41,4 +41,19 @@ python3 -m venv .venv
 '''
 (use "python" instead of "python3" if using windows)
 
-* 
+* Before you can use the environment, you must activate it. The command varies depending on your operating system and shell:
+'''
+source .venv/bin/activate
+'''
+
+4) Install Dependencies
+* Run this line of code in the terminal with the virtual environment.
+'''
+pip install -r requirements.txt
+'''
+
+5) Run main.py 
+'''
+python3 main.py
+'''
+
