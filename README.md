@@ -73,7 +73,7 @@ Follow these steps to set up the project on your local machine:
 
 ## Executing the Program
 
-Whenever you want to run the program (including the first time), open your terminal and follow these steps. 
+Whenever you want to run the program, open your terminal and follow these steps. If (.venv) is already activated, you can skip to step 3 and just run the script.
 
 *Note: The first time you run the application, an active internet connection is required to download package assets.*
 
@@ -96,4 +96,5 @@ Whenever you want to run the program (including the first time), open your termi
      ```cmd
      python main.py
      ```
+*Note: Future versions are being developed to remove the need to install dependencies and make the app easier to run by making it an executable file.*
 
