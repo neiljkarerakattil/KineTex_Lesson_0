@@ -24,36 +24,76 @@ At a minimum, these are the dependencies that can be installed manually. However
 
 * When the app runs, it might give a warning that SoX is missing. SoX is not required, but it can be installed to remove the Warning. If installed, SoX must be added to PATH manually.
 
-## Installation
+## Installation & Setup
 
-1) Download the main.py file into a folder of your choice. It must be in a folder. Do not put it directly into the Downloads folder, as a lot of other files will be generated in this folder.
+Follow these steps to set up the project on your local machine:
 
-2) Download requirements.txt and put it into the same folder
+1. **Prepare your project folder:**
+   Create a dedicated folder for this project and place both `main.py` and `requirements.txt` inside it. 
+   *(Note: Avoid running this directly in your Downloads folder, as the application will generate additional files during execution).*
 
-3) Create a virtual environment for this project (recommended):
-* Open your terminal (macOS/Linux) or Command Prompt/PowerShell (Windows) and use cd to go to the directory where you want to store your project:
-```
-cd path/to/your/project
-```
-* Run the creation command. You can name your environment folder whatever you like, but .venv or venv are standard conventions:
-```
-python3 -m venv .venv
-```
-(use "python" instead of "python3" if using windows)
+2. **Navigate to your project directory:**
+   Open your terminal (macOS/Linux) or Command Prompt/PowerShell (Windows) and run:
+   ```bash
+   cd path/to/your/project
+   ```
 
-* Before you can use the environment, you must activate it. The command varies depending on your operating system and shell:
-```
-source .venv/bin/activate
-```
+3. **Create a virtual environment:**
+   Run the environment creation command for your operating system:
+   * **macOS / Linux:**
+     ```bash
+     python3 -m venv .venv
+     ```
+   * **Windows:**
+     ```cmd
+     python -m venv .venv
+     ```
 
-4) Install Dependencies
-* Run this line of code in the terminal with the virtual environment.
-```
-pip install -r requirements.txt
-```
+4. **Activate the virtual environment:**
+   You must activate the environment before installing dependencies or running the script:
+   * **macOS / Linux:**
+     ```bash
+     source .venv/bin/activate
+     ```
+   * **Windows (Command Prompt):**
+     ```cmd
+     .venv\Scripts\activate.bat
+     ```
+   * **Windows (PowerShell):**
+     ```powershell
+     .venv\Scripts\Activate.ps1
+     ```
+   *(You will know it worked when you see `(.venv)` appear at the beginning of your terminal prompt).*
 
-5) Run main.py
-```
-python3 main.py
-```
+5. **Install dependencies:**
+   With the virtual environment activated, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Executing the Program
+
+Whenever you want to run the program (including the first time), open your terminal and follow these steps. 
+
+*Note: The first time you run the application, an active internet connection is required to download package assets.*
+
+1. **Navigate to the project folder:**
+   ```bash
+   cd path/to/your/project
+   ```
+
+2. **Activate the virtual environment:**
+   * **macOS / Linux:** `source .venv/bin/activate`
+   * **Windows (Cmd):** `.venv\Scripts\activate.bat`
+   * **Windows (PowerShell):** `.venv\Scripts\Activate.ps1`
+
+3. **Run the script:**
+   * **macOS / Linux:**
+     ```bash
+     python3 main.py
+     ```
+   * **Windows:**
+     ```cmd
+     python main.py
+     ```
 
