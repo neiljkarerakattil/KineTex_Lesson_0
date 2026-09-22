@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
-SOX_DIR = PROJECT_DIR / "tools" / "sox"
+SOX_DIR = PROJECT_DIR / "SoX" / "sox.exe"
 
 
 def install_python_dependencies():
