@@ -98,3 +98,15 @@ Whenever you want to run the program, open your terminal and follow these steps.
      ```
 *Note: Future versions are being developed to remove the need to install dependencies and make the app easier to run by making it an executable file.*
 
+## Uninstallation
+
+To completely remove the application and all of its generated files from your system, follow these steps:
+
+1. **Deactivate the virtual environment:**
+   If the virtual environment is currently active in your terminal, turn it off by running:
+   ```bash
+   deactivate
+   ```
+   *(You can now close your terminal window).*
+
+2. **Delete the project folder:**
