@@ -11,7 +11,7 @@ The main features currently implemented are that latex style math is rendered an
 
 ### Python 3 is REQUIRED 
 
-At a minimum, these are the dependencies that can be installed manually. However, the installation steps will attempt to install all these dependencies in a more automated way. This only needs to be used if the installer fails.
+At a minimum, these are the dependencies that can be installed manually. However, the installation steps will attempt to install all these dependencies in a more automated way. This only needs to be used if the installation steps fail.
 
 * manim
 * manim_voiceover
