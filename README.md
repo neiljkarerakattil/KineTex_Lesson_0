@@ -24,6 +24,8 @@ At a minimum, these are the dependencies that can be installed manually. However
 
 * When the app runs, it might give a warning that SoX is missing. SoX is not required, but it can be installed to remove the Warning. If installed, SoX must be added to PATH manually.
 
+* 'Example video.txt' is a file containing most of the commands that can be used. To test whether the app works, download 'Example video.txt' and run it in the app.
+
 ## Installation & Setup
 
 Follow these steps to set up the project on your local machine:
